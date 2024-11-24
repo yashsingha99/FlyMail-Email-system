@@ -1,0 +1,12 @@
+.inbox-scroll {
+    overflow: scroll;
+    scrollbar-width: none;
+  }
+  
+  .inbox-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .inbox-scroll::-webkit-scrollbar {
+    display: none;
+  }
