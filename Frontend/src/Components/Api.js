@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = `${import.process.env.URL}/api/email`; 
+const BASE_URL = `https://flymail-email-system.onrender.com/api/email`; 
 
 export const getAllEmails = async (user) => {
   try {
