@@ -14,6 +14,7 @@ import ComposeEmail from "../ComposeEmail";
 import EmailDetails from "../EmailDetails";
 import Inbox from "../Inbox";
 import EastIcon from "@mui/icons-material/East";
+const URL = import.process.env.URL;
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { user } = useUser();
@@ -37,7 +38,7 @@ const Navbar = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/user/createOrLogin",
+        `${URL}/api/user/createOrLogin`,
         data
       );
       console.log("Auth Response:", response.data);
