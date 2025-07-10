@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5000/api/email"; 
+const BASE_URL = `${import.process.env.URL}/api/email`; 
 
 export const getAllEmails = async (user) => {
   try {
